@@ -151,7 +151,7 @@ Celà crée le pointage suivant :
 
 <p align="center">
 
-<img src="http://guides.rubyonrails.org/routing.html#crud-verbs-and-actions" alt="Modèle MVC" target="_blank">
+<img src="http://media.tumblr.com/tumblr_m6gb8lux6E1r731lp.png" alt="Modèle MVC" target="_blank">
 
 </p>
 
