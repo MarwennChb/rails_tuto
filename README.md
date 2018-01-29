@@ -65,25 +65,6 @@ Dans Rails, on peut trouver un dossier DB, dans lequel on trouve :
 
 Il faut savoir que Rails utilise par default sqlite3 comme base de données, on peut voir ceci dans le fichier config/database.yml.
 
-+ **Exemple :** Dans le cas de la création d'un site type blog considérons le code dessous :
-
-		class CreateArticles < ActiveRecord::Migration[5.0]
-		  def change
-		    create_table :articles do |t|
-		      t.string :title
-		      t.text :text
-
-		      t.timestamps
-		    end
-		  end
-		end
-	
-Ce code va créer : 
-- Crée une table d'articles à é colonnes
-- Créer au format string, un titre
-- Créer au format texte, le body de l'article
-- timestamp : pour dire la date de création et de maj de l'a BD 
-
 ## GET / POST
 Deux méthodes couramment utilisées pour une requête-réponse entre un client et un serveur sont: GET et POST.
 
@@ -114,6 +95,27 @@ Quelques autres notes sur les requêtes POST:
 - Les requêtes POST ne peuvent pas être mises en signet
 - Les requêtes POST n'ont aucune restriction sur la longueur des données
 
+## Les concepts de migration
+Les migrations dans Rails nous permettent de faire évoluer le schema de notre base de donnée facilement, sans faire de SQL. On écrit une migration et celle-ci update notre bdd.
 
+Une migration est donc une sous-classe de la classe ActiveRecord::Migration. A ce titre, elle définit deux méthodes : une méthode « up », qui permet d'ajouter une modification à la base de données, et une méthode« down », qui permet de retirer cette modification de la base de données.
 
++ **Exemple :** Dans le cas de la création d'un site type blog considérons le code dessous :
+
+		class CreateArticles < ActiveRecord::Migration[5.0]
+		  def change
+		    create_table :articles do |t|
+		      t.string :title
+		      t.text :text
+
+		      t.timestamps
+		    end
+		  end
+		end
+	
+Ce code va créer : 
+- Crée une table d'articles à é colonnes
+- Créer au format string, un titre
+- Créer au format texte, le body de l'article
+- timestamp : pour dire la date de création et de maj de l'a BD 
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png
