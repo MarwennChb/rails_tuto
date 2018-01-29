@@ -14,6 +14,12 @@ Une page web statique est une page web dont le contenu ne varie pas en fonction 
 
 Une page web dynamique est générée à la demande et son contenu varie en fonction de qui effectue la demande (heure, adresse IP de l'ordinateur du demandeur, formulaires remplis...).
 
+<p align="center">
+
+<img src="https://www.pluralsight.com/content/pluralsight/en/blog/creative-professional/sta/static-dynamic-websites-theres-difference/_jcr_content/main/hero_blog_block/image-res.img.jpg/1446605940972.jpg" alt="Diff Static Dynamic" target="_blank">
+
+</p>
+
 ## Le MVC
 Le modèle MVC est un principe de code qui consiste à séparer l’affichage des informations (la vue), les actions de l’utilisateur (le contrôleur) et l’accès aux bases de données (le modèle).
 
@@ -38,3 +44,5 @@ Cheminement d'une requête :
 6. Le contrôleur décide de la vue à afficher et va l’appeler au sein du View
 7. Le code HTML de la vue est envoyé au controleur 
 8. Le controlleur encoie la vue à afficher au navigateur
+
+## Les routes
