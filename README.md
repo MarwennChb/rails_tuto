@@ -84,5 +84,36 @@ Ce code va créer :
 - Créer au format texte, le body de l'article
 - timestamp : pour dire la date de création et de maj de l'a BD 
 
+## GET / POST
+Deux méthodes couramment utilisées pour une requête-réponse entre un client et un serveur sont: GET et POST.
+
+- GET - Demande des données d'une ressource spécifiée
+- POST - Soumet les données à traiter à une ressource spécifiée
+
+La méthode GET
+
+Notez que la chaîne de requête (paires nom / valeur) est envoyée dans l'URL d'une requête GET: /test/demo_form.php?name1=value1&name2=value2
+
+Quelques autres notes sur les requêtes GET:
+
+- Les requêtes GET peuvent être mises en cache
+- Les requêtes GET restent dans l'historique du navigateur
+- Les requêtes GET peuvent être mises en signet
+- Les requêtes GET ne doivent jamais être utilisées avec des données sensibles
+- Les requêtes GET ont des restrictions de longueur
+- Les requêtes GET ne doivent être utilisées que pour extraire des données
+
+La méthode POST
+
+Notez que la chaîne de requête (paires nom / valeur) est envoyée dans le corps du message HTTP d'une requête POST: POST /test/demo_form.php HTTP / 1.1 Hôte: w3schools.com nom1 = valeur1 & nom2 = valeur2
+
+Quelques autres notes sur les requêtes POST:
+
+- Les requêtes POST ne sont jamais mises en cache
+- Les requêtes POST ne restent pas dans l'historique du navigateur
+- Les requêtes POST ne peuvent pas être mises en signet
+- Les requêtes POST n'ont aucune restriction sur la longueur des données
+
+
 
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png
