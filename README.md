@@ -49,11 +49,11 @@ Cheminement d'une requête :
 Les routes permettent d’interpréter les URL et d’orienter vers les bonnes actions des controlleurs. La configuration se trouve dans le fichier config/routes.rb .
 
 On peut utiliser la commande 
-  GET /articles(:id) articles#index
+
+    GET /articles(:id) articles#index
 
 On peut également utiliser l'active record et déclarer : 
-  resources :articles
 
-
+    resources :articles
 
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png
