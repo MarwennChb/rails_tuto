@@ -79,10 +79,10 @@ Il faut savoir que Rails utilise par default sqlite3 comme base de données, on 
 	end
 	
 Ce code va créer : 
-    Crée une table article
-    Créer au format string, un titre
-    créer au format texte le body de l'article
-    timestamp : pour dire la date de création et de maj de l'a BD 
+- Crée une table d'articles à é colonnes
+- Créer au format string, un titre
+- Créer au format texte, le body de l'article
+- timestamp : pour dire la date de création et de maj de l'a BD 
 
 
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png
