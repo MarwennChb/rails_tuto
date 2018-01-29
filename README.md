@@ -24,10 +24,19 @@ Une page web dynamique est générée à la demande et son contenu varie en fonc
 Le modèle MVC est un principe de code qui consiste à séparer l’affichage des informations (la vue), les actions de l’utilisateur (le contrôleur) et l’accès aux bases de données (le modèle).
 
 + Le **modèle** traite principalement les données et les interactions avec la base de données. Contient les données à afficher.
+		
+		Dans Rails on trouve les modèles dans le dossier
+		/app/models
 
 + La **vue** il contient la présentation de l'interface graphique.
 
+		Dans Rails on trouve les vues dans le dossier
+		/app/vues
+
 + Le **contrôleur** le gars qui gère tout, il fait le lien entre les view et le model et renvoi l'information vers le navigateur. Il contient la logique qui fait tourner le programme.
+
+		Dans Rails on trouve les controllers dans le dossier
+		/app/controller
 
 <p align="center">
 
@@ -124,6 +133,15 @@ Ce code va créer :
 - timestamp : pour dire la date de création et de maj de l'a BD 
 
 ## Les relations entre les models des BDD
+Le modèle le plus courant, appelé modèle relationnel, trie les données dans des tables, que l'on appelle aussi des relations, dont chacune se compose de colonnes et de lignes. Chaque colonne contient un attribut de l'entité en question, comme le prix, le code postal ou la date de naissance. L'ensemble des attributs d'une relation est appelé domaine. La clé primaire est constituée par un attribut spécifique ou une combinaison d'attributs. On peut y faire référence dans d'autres tables : elle est alors appelée clé étrangère. Chaque ligne, également appelée tuple, comprend des données sur une instance spécifique de l'entité en question, comme un employé en particulier. Le modèle tient également compte des types de relations entre ces tables, notamment les relations un-à-un, un-à-plusieurs et plusieurs-à-plusieurs
+
+
+<p align="center">
+
+<img src="https://camo.githubusercontent.com/b9e0d6cdb4d340c68b350e74aa6489aa080c6a3a/68747470733a2f2f626c6f672e7068696c69707068617565722e64652f626c6f672f323031352f303531342d72656c6174696f6e616c2d6461746162617365732d737472656e6774682d7765616b6e65737365732d6d6f6e676f64622f496d706564656e63654d69736d617463682d4f4f2d52656c6174696f6e616c312e706e67" alt="Modèle MVC" target="_blank">
+
+</p>
+
 
 ## Les fonctions du CRUD
 Ce terme permet de désigner les actions de bases pour une ressource prédéfinie :
