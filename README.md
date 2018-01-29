@@ -67,16 +67,16 @@ Il faut savoir que Rails utilise par default sqlite3 comme base de données, on 
 
 + **Exemple :** Dans le cas de la création d'un site type blog considérons le code dessous :
 
-	class CreateArticles < ActiveRecord::Migration[5.0]
-	  def change
-	    create_table :articles do |t|
-	      t.string :title
-	      t.text :text
-	 
-	      t.timestamps
-	    end
-	  end
-	end
+		class CreateArticles < ActiveRecord::Migration[5.0]
+		  def change
+		    create_table :articles do |t|
+		      t.string :title
+		      t.text :text
+
+		      t.timestamps
+		    end
+		  end
+		end
 	
 Ce code va créer : 
 - Crée une table d'articles à é colonnes
