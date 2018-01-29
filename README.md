@@ -1,2 +1,1 @@
-# rails_tuto
-Rails and MVC Tuoto
+Alt-H1 Découverte de Ruby on Rails
