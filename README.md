@@ -56,4 +56,33 @@ On peut également utiliser l'active record et déclarer :
 
     resources :articles
 
+## Les Bases de Données
+Une base de données (database en anglais), permet de stocker et de retrouver l'intégralité de données brutes ou d'informations en rapport avec un thème ou une activité ; celles-ci peuvent être de natures différentes et plus ou moins reliées entre elles. Dans la très grande majorité des cas, ces informations sont très structurées, et la base est localisée dans un même lieu et sur un même support. 
+
+Dans Rails, on peut trouver un dossier DB, dans lequel on trouve : 
+..* un fichier schema.rb : une vue synthètiques sur les bases de données
+..* un dossier migrate où on trouve les diffentes ases de données
+
+Il faut savoir que Rails utilise par default sqlite3 comme base de données, on peut voir ceci dans le fichier config/database.yml.
+
+..* **Exemple :** Dans le cas de la création d'un site type blog considérons le code dessous :
+
+	class CreateArticles < ActiveRecord::Migration[5.0]
+	  def change
+	    create_table :articles do |t|
+	      t.string :title
+	      t.text :text
+	 
+	      t.timestamps
+	    end
+	  end
+	end
+	
+Ce code va créer : 
+    Crée une table article
+    Créer au format string, un titre
+    créer au format texte le body de l'article
+    timestamp : pour dire la date de création et de maj de l'a BD 
+
+
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png
