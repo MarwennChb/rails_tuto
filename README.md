@@ -123,4 +123,23 @@ Ce code va créer :
 - Créer au format texte, le body de l'article
 - timestamp : pour dire la date de création et de maj de l'a BD 
 
+## Les relations entre les models des BDD
+
+## Les fonctions du CRUD
+Ce terme permet de désigner les actions de bases pour une ressource prédéfinie :
+- **Create**, permet de créer un nouvel enregistrement : 
+
+		POST: /{resources}
+- **Read**, permet d'afficher un ou plusieurs enregistrements :
+
+		GET: /{resources} et GET: /{resources}/:id
+- **Update**, permet de mettre à jour un enregistrement
+
+		PUT: /{resources}/:id
+
+- **Destroy**, permet de supprimer un enregistrement : 
+
+		DELETE: /{resources}/:id
+
+
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png
