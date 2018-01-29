@@ -59,6 +59,10 @@ On peut également utiliser l'active record et déclarer :
 ## Les Bases de Données
 Une base de données (database en anglais), permet de stocker et de retrouver l'intégralité de données brutes ou d'informations en rapport avec un thème ou une activité ; celles-ci peuvent être de natures différentes et plus ou moins reliées entre elles. Dans la très grande majorité des cas, ces informations sont très structurées, et la base est localisée dans un même lieu et sur un même support. 
 
+Ruby On Rails utilise un ORM, un système qui transforme les tables de ta base de donnée en version orienté objet... pour faire simple, tu apprends une nouvelle façon de manipuler ta base de donnée.
+
+Pour Rails, c'est Active Record L'intérêt, ce n'est pas de te compliquer la vie à apprendre un nouveau langage, que du contraire. En utilisant Active Record, Rails va traduire ton code pour que les requêtes se fassent sur ta base de donnée. Peu importe la syntaxe de ta base de donnée, le code sera le même, du code Ruby. C'est très pratique si tu veux changer de système de DB pendant ton projet.
+
 Dans Rails, on peut trouver un dossier DB, dans lequel on trouve : 
 - un fichier schema.rb : une vue synthètiques sur les bases de données
 - un dossier migrate où on trouve les diffentes ases de données
@@ -118,4 +122,5 @@ Ce code va créer :
 - Créer au format string, un titre
 - Créer au format texte, le body de l'article
 - timestamp : pour dire la date de création et de maj de l'a BD 
+
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png
