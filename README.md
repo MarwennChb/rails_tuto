@@ -141,5 +141,22 @@ Ce terme permet de désigner les actions de bases pour une ressource prédéfini
 
 		DELETE: /{resources}/:id
 
+Dans Rails, par convention, chaque action pointe vers une action CRUD spécifique dans la base de donnée. 
+Une seule entrée dans le fichier route crée 7 routes différentes dans notre application concernant la table en question.
+Exemple : 
+
+		resources :photos
+
+Celà crée le pointage suivant :
+
+<p align="center">
+
+<img src="http://guides.rubyonrails.org/routing.html#crud-verbs-and-actions" alt="Modèle MVC" target="_blank">
+
+</p>
+
+
+
+
 
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png
