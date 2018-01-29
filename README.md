@@ -25,6 +25,6 @@ Le modèle MVC est un principe de code qui consiste à séparer l’affichage de
 
 <p align="center">
 
-    <img src=http://french.railstutorial.org/images/figures/mvc_detailed-full.png alt="Modèle MVC" target="_blank">
+<img src="http://french.railstutorial.org/images/figures/mvc_detailed-full.png" alt="Modèle MVC" target="_blank">
 
 </p>
