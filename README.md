@@ -1,6 +1,4 @@
-# Découverte de Ruby on Rails:
-
-![alt text][logo]
+# Découverte de Ruby on Rails ![alt text][logo]
 
 1. La différence entre un site statique et un site dynamique
 2. Le MVC
