@@ -17,14 +17,24 @@ Une page web dynamique est générée à la demande et son contenu varie en fonc
 ## Le MVC
 Le modèle MVC est un principe de code qui consiste à séparer l’affichage des informations (la vue), les actions de l’utilisateur (le contrôleur) et l’accès aux bases de données (le modèle).
 
-+ Le **modèle** est ce que l’on appelle un objet, c’est le cœur de l’application. Il traite principalement les données et les interactions avec la base de données.
++ Le **modèle** traite principalement les données et les interactions avec la base de données. Contient les données à afficher.
 
-+ La **vue** traite ce que nous voyons dans notre navigateur web, elle restitue le modèle au sein de notre interface web et permet à l’utilisateur d’interagir avec le modèle.
++ La **vue** il contient la présentation de l'interface graphique.
 
-+ Le **contrôleur** fait le lien entre le modèle et la vue, il gère les requêtes des utilisateurs et détermine les traitements qui doivent être effectués pour chaque action. Il va utiliser les données du modèle, les traiter et les envoyer à la vue pour que celle-ci les affiche.
++ Le **contrôleur** le gars qui gère tout, il fait le lien entre les view et le model et renvoi l'information vers le navigateur. Il contient la logique qui fait tourner le programme.
 
 <p align="center">
 
 <img src="http://french.railstutorial.org/images/figures/mvc_detailed-full.png" alt="Modèle MVC" target="_blank">
 
 </p>
+
+Cheminement d'une requête :
+1. L’utilisateur envoie une requête HTTP (via le navigateur) vers le server Rails
+2. Le rooter la transmet au Controller via la méthode indexe
+3. Le contrôleur appelle le modèle, celui-ci va récupérer les données concernant cette requete
+4. Le modèle consulte la base de données 
+5. Le modèe retourne les données au contrôleur
+6. Le contrôleur décide de la vue à afficher et va l’appeler au sein du View
+7. Le code HTML de la vue est envoyé au controleur 
+8. Le controlleur encoie la vue à afficher au navigateur
