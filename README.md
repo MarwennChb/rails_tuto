@@ -8,3 +8,8 @@
 6. Le concept de migration
 7. Les relations entre les models des BDD
 8. Les fonctions du CRUD
+
+
+Une page web statique est une page web dont le contenu ne varie pas en fonction de la requête (de qui demande la page), en gros tout le monde recoit le même contenu.
+
+Une page web dynamique est générée à la demande et son contenu varie en fonction de qui effectue la demande (heure, adresse IP de l'ordinateur du demandeur, formulaires remplis...).
